@@ -181,8 +181,8 @@ footer button:hover {
 }
 
 .icono-card {
-  width: 80px;   /* antes 64px */
-  height: 80px;  /* antes 64px */
+  width: 50px;
+  height: 50px;
   margin-bottom: 15px;
 }
 
@@ -196,12 +196,4 @@ footer button:hover {
   color: #333;
   font-size: 0.95rem;
   line-height: 1.5;
-
-  .icono-card {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
-  object-fit: contain; /* 🔹 evita que el SVG se desborde */
-}
-
 }
