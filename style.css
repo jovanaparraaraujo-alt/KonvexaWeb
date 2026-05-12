@@ -1,33 +1,47 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background-color: #fff;
   color: #333;
+  background-color: #fff;
 }
 
 header {
-  background-color: #E8B6C9; /* Rosa Konvexa */
-  color: #000;
-  text-align: center;
-  padding: 2rem 1rem;
+  background-color: #f8e6ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
 }
 
-.intro {
-  text-align: center;
-  padding: 2rem;
-  background-color: #f9f9f9;
+.logo {
+  height: 60px;
 }
 
-.contacto {
-  background-color: #000;
-  color: #fff;
-  padding: 2rem;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(to right, #f8e6ea, #fff);
   text-align: center;
+  padding: 80px 20px;
+}
+
+section {
+  padding: 60px 40px;
 }
 
 footer {
-  background-color: #E8B6C9;
-  color: #000;
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 20px;
 }
