@@ -14,25 +14,36 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Logo Konvexa */
 .logo {
   height: 60px;
   width: auto;
+  display: block;
 }
 
+/* Navegación */
 nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-nav a.active {
-  color: #E8B6C9;
+nav a:hover {
+  color: #8B3A62; /* burdeos corporativo al pasar el cursor */
+}
+
+nav a.active,
+nav a.activo {
+  color: #E8B6C9; /* rosa corporativo para resaltar la página activa */
 }
 
 /* Hero */
@@ -198,17 +209,16 @@ footer button:hover {
   line-height: 1.5;
 }
 
+/* Experiencia */
 .experiencia {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
   padding: 50px 20px;
-  background: linear-gradient(to right, #b3b3b3, #7a7a7a); /* gris más parecido al de la referencia */
+  background: linear-gradient(to right, #b3b3b3, #7a7a7a);
   color: #fff;
-  font-family: 'Poppins', sans-serif;
   text-align: center;
-  border-top: none; /* elimina la franja negra superior */
   margin-top: 0;
 }
 
@@ -229,8 +239,7 @@ footer button:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Seccion */
-
+/* Sección Servicios */
 .servicios {
   display: flex;
   flex-direction: column;
@@ -281,4 +290,3 @@ footer button:hover {
   color: #222;
   line-height: 1.6;
 }
-
