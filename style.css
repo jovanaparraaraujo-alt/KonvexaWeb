@@ -71,6 +71,17 @@ footer {
   padding: 40px 20px;
 }
 
+footer a {
+  color: #fff; /* Enlaces blancos */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #E8B6C9; /* Rosa corporativo al pasar el cursor */
+  text-decoration: underline;
+}
+
 footer input, footer textarea {
   padding: 10px;
   border: none;
@@ -170,7 +181,7 @@ footer button:hover {
 }
 
 .card p {
-  color: #555;
+  color: #fff6f6;
   font-size: 0.95rem;
   line-height: 1.5;
 }
