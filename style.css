@@ -291,30 +291,3 @@ footer button:hover {
   line-height: 1.5;
   color: #222;
 }
-
-/* Celular */
-@media (max-width: 768px) {
-  .servicio,
-  .servicio.invertido {
-    flex-direction: column;
-    max-width: 92%;
-    min-height: auto;
-  }
-
-  .servicio img {
-    width: 100%;
-    height: 180px;
-  }
-
-  .servicio-texto {
-    padding: 22px 20px;
-  }
-
-  .servicio-texto h3 {
-    font-size: 1.25rem;
-  }
-
-  .servicio-texto p {
-    font-size: 0.9rem;
-  }
-}
