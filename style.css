@@ -243,8 +243,8 @@ footer button:hover {
 .servicios {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 60px 0;
+  gap: 32px;
+  padding: 50px 20px;
   background-color: #f5f5f5;
 }
 
@@ -252,9 +252,14 @@ footer button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 36px;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px;
   background: linear-gradient(to right, #d1d1d1, #9e9e9e);
   color: #333;
-  padding: 30px 0;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .servicio.invertido {
@@ -262,57 +267,31 @@ footer button:hover {
   background: linear-gradient(to right, #b3b3b3, #7a7a7a);
 }
 
-.servicio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 30px 40px;
-}
-
 .servicio .imagen {
-  flex: 0 0 320px;
+  flex: 0 0 340px;
 }
 
 .servicio .imagen img {
   width: 100%;
-  max-width: 320px;
-  height: 220px;
+  height: 230px;
   object-fit: cover;
+  object-position: center;
+  display: block;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .servicio .texto {
-  max-width: 500px;
-  padding: 0 40px;
-}
-
-.servicio .texto h3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.servicio .texto h3.burdeos {
-  color: #8B3A62; /* tono burdeos corporativo */
-}
-
-.servicio .texto p {
-  font-size: 1rem;
-  color: #222;
-  line-height: 1.6;
+  max-width: 480px;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
   .servicio,
   .servicio.invertido {
     flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
+    padding: 24px;
+    gap: 22px;
   }
 
   .servicio .imagen {
@@ -321,11 +300,11 @@ footer button:hover {
   }
 
   .servicio .imagen img {
-    max-width: 100%;
-    height: 200px;
+    height: 190px;
   }
 
   .servicio .texto {
-    padding: 0;
+    max-width: 100%;
+    text-align: center;
   }
 }
