@@ -253,13 +253,12 @@ footer button:hover {
   align-items: center;
   justify-content: center;
   gap: 36px;
-  max-width: 1050px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 24px;
   background: linear-gradient(to right, #d1d1d1, #9e9e9e);
   color: #333;
   border-radius: 8px;
-  overflow: hidden;
 }
 
 .servicio.invertido {
@@ -268,15 +267,16 @@ footer button:hover {
 }
 
 .servicio .imagen {
-  flex: 0 0 340px;
+  width: 100%;
+  max-width: 720px;
 }
 
 .servicio .imagen img {
   width: 100%;
-  height: 230px;
-  object-fit: cover;
-  object-position: center;
+  max-width: 720px;
+  height: auto;
   display: block;
+  margin: 0 auto;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
