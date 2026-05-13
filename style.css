@@ -200,50 +200,41 @@ footer button:hover {
 
 /* Íconos */
 .icono-card {
-  width: 80px;
-  height: 80px;
+  width: 105px;
+  height: 105px;
 
-  padding: 12px;
+  padding: 18px;
 
-  background-color: rgba(232, 182, 201, 0.18);
+  background: radial-gradient(
+    circle,
+    rgba(139, 30, 63, 0.18) 0%,
+    rgba(232, 182, 201, 0.10) 55%,
+    rgba(255,255,255,0) 100%
+  );
+
+  border: 2px solid rgba(139, 30, 63, 0.35);
 
   border-radius: 50%;
 
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   object-fit: contain;
 
-  transition: transform 0.3s ease;
+  box-shadow:
+    0 0 18px rgba(139, 30, 63, 0.18),
+    0 4px 10px rgba(0,0,0,0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover .icono-card {
   transform: scale(1.08);
-}
 
-.card h3 {
-  color: #8B1E3F;
-  margin-bottom: 12px;
-  font-size: 1.35rem;
-}
-
-.card p {
-  color: #333;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-
-  .cards {
-    padding: 40px 20px;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 320px;
-  }
-
+  box-shadow:
+    0 0 25px rgba(139, 30, 63, 0.28),
+    0 6px 14px rgba(0,0,0,0.12);
 }
 
 /* Experiencia */
